@@ -1,0 +1,65 @@
+{% extends 'store/main.html' %} {% load static %} {% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/store.css' %}" />
+
+<section id="store" class="store section-padding">
+  <div class="container py-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+      <div class="col-12 col-md-12 col-lg-4">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="{% static 'images/Inventory/img1.png' %}"
+            alt="Card image cap"
+          />
+          <div class="card-body mt-4 bg-primary">
+            <h5 class="card-title1">Men, Suit</h5>
+            <h5 class="card-title">Men Suit</h5>
+            <hr />
+            <div class="d-flex justify-content-between">
+              <div>
+                <p class="price">$20</p>
+              </div>
+              <div>
+                <a href="#" class="btn btn-outline-secondary add-btn">
+                  <i class="bi bi-cart4"></i>
+                </a>
+                <a class="btn btn-outline-success" href="#">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Diseño 2 -->
+
+<!-- <div class="col-12 col-md-12 col-lg-4">
+    <div class="card">
+        <img
+          class="card-img-top"
+          src="{% static 'images/Carousel/img2.png' %}"
+          alt="Card image cap"
+        />
+        <div class="card-body mt-4 bg-primary">
+          <h5 class="card-title1">Men, Suit</h5>
+          <h5 class="card-title">Men Suit</h5>
+          <hr />
+          <div class="d-flex justify-content-between">
+            <div>
+              <p class="price">$20</p>
+            </div>
+            <div>
+              <a href="#" class="btn btn-outline-secondary add-btn">
+                <i class="bi bi-cart4"></i>
+              </a>
+              <a class="btn btn-outline-success" href="#">View</a>
+            </div>
+          </div>
+        </div>
+    </div>
+</div> -->
+
+{% endblock content %}

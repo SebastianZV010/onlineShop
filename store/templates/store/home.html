@@ -1,0 +1,114 @@
+{% extends 'store/main.html' %} {% load static %} {% block content %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}" />
+<div
+  id="carouselExampleIndicators"
+  class="carousel slide"
+  data-bs-ride="carousel"
+>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img
+        src="{% static 'images/Carousel/img1.png' %}"
+        class="d-block w-100"
+        alt="Camisa 1"
+      />
+      <div class="carousel-caption">
+        <h5>Fashion</h5>
+        <p class="prompt">
+          Experience the epitome of style with our Fashion line. From the latest
+          trends to timeless pieces, our collection caters to every style
+          preference. Unleash your individuality and discover a diverse range of
+          clothing that speaks volumes about your personality and taste.
+        </p>
+        <p>
+          <a href="{% url 'store'  %}" class="btn btn-warning mt-3"
+            >Learn More</a
+          >
+        </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{% static 'images/Carousel/img2.png' %}"
+        class="d-block w-100"
+        alt="Branding"
+      />
+      <div class="carousel-caption">
+        <h5>Suits</h5>
+        <p class="prompt">
+          Elevate your style with our impeccable Suits collection. From timeless
+          classics to contemporary cuts, each suit is tailored to perfection.
+          Discover the essence of sophistication and make a statement for any
+          formal or casual affair.
+        </p>
+        <p>
+          <a href="{% url 'store' %}" class="btn btn-warning mt-3"
+            >Learn More</a
+          >
+        </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{% static 'images/Carousel/img3.png' %}"
+        class="d-block w-100"
+        alt="Branding"
+      />
+      <div class="carousel-caption">
+        <h5>Hoodies</h5>
+        <p class="prompt">
+          Explore our collection of Hoodies: comfort, style, and versatility in
+          every garment. From classic designs to the latest trends, discover the
+          perfect balance between warmth and fashion to stand out on any
+          occasion.
+        </p>
+        <p>
+          <a href="{% url 'store'  %}" class="btn btn-warning mt-3"
+            >Learn More</a
+          >
+        </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{% static 'images/Carousel/img4.png' %}"
+        class="d-block w-100"
+        alt="Branding"
+      />
+      <div class="carousel-caption">
+        <h5>Hats</h5>
+        <p class="prompt">
+          Complete your look with our Hats selection. Whether it's for fashion
+          or function, our hats offer the perfect blend of style and
+          practicality. Choose from a variety of designs to complement your
+          outfit and add a touch of flair to your ensemble.
+        </p>
+        <p>
+          <a href="{% url 'store'  %}" class="btn btn-warning mt-3"
+            >Learn More</a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#carouselExampleIndicators"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselExampleIndicators"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+{% endblock %}

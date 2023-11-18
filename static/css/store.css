@@ -1,0 +1,28 @@
+section {
+  background-image: url("/static/images/home-design.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  /* Se superpone un fondo negro semitransparente */
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card {
+  border-radius: 6px;
+  background-color: #fafafa;
+}
+
+.bg-primary {
+  background-color: #fafafa !important;
+}
+
+.card-title1 {
+  font-size: 12px !important;
+  color: burlywood !important;
+}
+
+.price {
+  color: burlywood;
+}
